@@ -51,6 +51,6 @@ fun ProductsSection(productSection: ProductSection) {
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 private fun ProductsSectionPreview() {
-    ProductsSection(ProductSection(title = "asd", listOf(Product("asdasd", BigDecimal(10.0), R.drawable.ic_launcher_background))))
+    ProductsSection(ProductSection(title = "asd", listOf(Product("asdasd", BigDecimal(10.0), R.drawable.pizza))))
 }
 

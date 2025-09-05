@@ -10,6 +10,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.datasource.LoremIpsum
 import androidx.compose.ui.unit.dp
 import com.example.aluvery.R
 import com.example.aluvery.model.Product
@@ -31,28 +32,28 @@ fun App(modifier: Modifier = Modifier) {
                 Spacer(Modifier)
                 ProductsSection(
                     productSection = ProductSection(
-                        title = "t1",
+                        title = "Cardápio 1",
                         listOf(
-                            Product("asdasd", BigDecimal(10.0), R.drawable.ic_launcher_background),
-                            Product("asdasd", BigDecimal(10.0), R.drawable.ic_launcher_background),
+                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
+                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
                         )
                     )
                 )
                 ProductsSection(
                     productSection = ProductSection(
-                        title = "t1",
+                        title = "Cardápio 2",
                         listOf(
-                            Product("asdasd", BigDecimal(10.0), R.drawable.ic_launcher_background),
-                            Product("asdasd", BigDecimal(10.0), R.drawable.ic_launcher_background),
+                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
+                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
                         )
                     )
                 )
                 ProductsSection(
                     productSection = ProductSection(
-                        title = "t1",
+                        title = "Cardápio 3",
                         listOf(
-                            Product("asdasd", BigDecimal(10.0), R.drawable.ic_launcher_background),
-                            Product("asdasd", BigDecimal(10.0), R.drawable.ic_launcher_background),
+                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
+                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
                         )
                     )
                 )
