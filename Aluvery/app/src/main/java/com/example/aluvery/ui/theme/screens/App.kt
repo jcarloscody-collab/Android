@@ -10,14 +10,12 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.datasource.LoremIpsum
 import androidx.compose.ui.unit.dp
-import com.example.aluvery.R
-import com.example.aluvery.model.Product
-import com.example.aluvery.model.ProductSection
 import com.example.aluvery.ui.theme.AluveryTheme
 import com.example.aluvery.ui.theme.components.ProductsSection
-import java.math.BigDecimal
+import com.example.aluvery.utils.cad1
+import com.example.aluvery.utils.cad2
+import com.example.aluvery.utils.cad3
 
 @Composable
 fun App(modifier: Modifier = Modifier) {
@@ -31,31 +29,13 @@ fun App(modifier: Modifier = Modifier) {
             ) {
                 Spacer(Modifier)
                 ProductsSection(
-                    productSection = ProductSection(
-                        title = "Cardápio 1",
-                        listOf(
-                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
-                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
-                        )
-                    )
+                    productSection = cad1
                 )
                 ProductsSection(
-                    productSection = ProductSection(
-                        title = "Cardápio 2",
-                        listOf(
-                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
-                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
-                        )
-                    )
+                    productSection = cad2
                 )
                 ProductsSection(
-                    productSection = ProductSection(
-                        title = "Cardápio 3",
-                        listOf(
-                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
-                            Product(LoremIpsum(20).values.first(), BigDecimal(10.0), R.drawable.pizza),
-                        )
-                    )
+                    productSection = cad3
                 )
                 Spacer(Modifier)
             }

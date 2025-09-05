@@ -15,7 +15,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.aluvery.R
 import com.example.aluvery.model.Product
 import com.example.aluvery.model.ProductSection
 import java.math.BigDecimal
@@ -51,6 +50,6 @@ fun ProductsSection(productSection: ProductSection) {
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 private fun ProductsSectionPreview() {
-    ProductsSection(ProductSection(title = "asd", listOf(Product("asdasd", BigDecimal(10.0), R.drawable.pizza))))
+    ProductsSection(ProductSection(title = "asd", listOf(Product("asdasd", BigDecimal(10.0),  "https://images.pexels.com/photos/65882/chocolate-dark-coffee-confiserie-65882.jpeg",))))
 }
 
